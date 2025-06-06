@@ -78,80 +78,61 @@ git clone https://github.com/GundetiManoj/crewai_bots2tools.git
 ```
 
 ### 2. Create Virtual Environment
-
+(https://docs.crewai.com/installation)
 ```bash
-CrewAI uses the uv as its dependency management and package handling tool. It simplifies project setup and execution, offering a seamless experience.(https://docs.crewai.com/installation)
-
-If you haven’t installed uv yet, follow step 1 to quickly get it set up on your system, else you can skip to step 2.
-
-1
 Install uv
 
 On macOS/Linux:
 
 Use curl to download the script and execute it with sh:
-
-
-Copy
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 If your system doesn’t have curl, you can use wget:
 
-
-Copy
+```bash
 wget -qO- https://astral.sh/uv/install.sh | sh
+```
+
 On Windows:
 
 Use irm to download the script and iex to execute it:
 
 
-Copy
+```bash
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
 If you run into any issues, refer to UV’s installation guide for more information.
 
-2
+```bash
 Install CrewAI 🚀
+```
 
 Run the following command to install crewai CLI:
 
 
-Copy
+```bash
 uv tool install crewai
+```
 If you encounter a PATH warning, run this command to update your shell:
 
 
-Copy
+```bash
 uv tool update-shell
+```
 If you encounter the chroma-hnswlib==0.7.6 build error (fatal error C1083: Cannot open include file: 'float.h') on Windows, install (Visual Studio Build Tools)[https://visualstudio.microsoft.com/downloads/] with Desktop development with C++.
 
 To verify that crewai is installed, run:
 
 
-Copy
+```bash
 uv tool list
+```
 You should see something like:
 
-
-Copy
+```bash
 crewai v0.102.0
-- crewai
-If you need to update crewai, run:
-
-
-Copy
-uv tool install crewai --upgrade
-Installation successful! You’re ready to create your first crew! 🎉
-​
-Creating a CrewAI Project
-We recommend using the YAML template scaffolding for a structured approach to defining agents and tasks. Here’s how to get started:
-
-1
-Generate Project Scaffolding
-
-Run the crewai CLI command:
-
-
-Copy
-crewai create crew <your_project_name>
 ```
 
 ### 3. Install Dependencies
@@ -420,9 +401,9 @@ def login():
     "email": "john.smith@email.com",
     "address": "123 Main St, New York, NY 10001"
   },
-  "status": "success",
-  "file_saved": "/path/to/output.json",
-  "fields_extracted": ["personal_details", "text_with_coords", "key_value_pairs", "tables"]
+  "text_with_coords":[],
+  "key_value_pairs":[],
+  "tables":[]
 }
 ```
 
@@ -688,31 +669,6 @@ Classification Details:
 - **Groq** for high-performance inference
 - **Hugging Face** for transformer models
 - **OpenCV** community for computer vision tools
-
-## 🎯 Roadmap
-
-### Upcoming Features
-
-- [ ] **Audio Processing Tools**
-  - Speech-to-text conversion
-  - Audio summarization
-  - Voice cloning detection
-
-- [ ] **Video Analysis Tools**
-  - Video content analysis
-  - Scene detection
-  - Subtitle generation
-
-- [ ] **Advanced Code Tools**
-  - Code style converter
-  - Documentation generator
-  - Test case generator
-
-- [ ] **Workflow Automation**
-  - Visual workflow builder
-  - Scheduled task execution
-  - Integration with popular platforms
-
 
 
 **Built with ❤️ using CrewAI Framework**
