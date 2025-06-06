@@ -11,10 +11,6 @@ A comprehensive collection of AI-powered tools built with CrewAI framework, feat
 - [Tool Categories](#tool-categories)
 - [Usage Examples](#usage-examples)
 - [API Keys Setup](#api-keys-setup)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
 
 ## ✨ Features
 
