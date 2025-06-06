@@ -77,13 +77,10 @@ brew install opencv
 git clone https://github.com/GundetiManoj/crewai_bots2tools.git
 ```
 
-### 2. Create Virtual Environment
-(https://docs.crewai.com/installation)
-```bash
+### 2. Create Virtual Environment:(https://docs.crewai.com/installation)
+
 Install uv
-
 On macOS/Linux:
-
 Use curl to download the script and execute it with sh:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
